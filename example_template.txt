@@ -1,0 +1,6 @@
+!
+hostname {{ HOSTNAME }}
+!
+{% for line in INTERFACE_CONFIG %}
+{{line}}
+{% endfor %}
